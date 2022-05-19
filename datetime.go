@@ -11,10 +11,13 @@ import "github.com/zhangdapeng520/zdpgo_datetime/carbon"
 */
 
 type DateTime struct {
-	Config        *Config       // 配置
+	Config *Config // 配置
+
 	TimeNow       carbon.Carbon // 今天此刻
 	TimeYesterday carbon.Carbon // 昨天此刻
 	TimeTomorrow  carbon.Carbon // 明天此刻
+
+	Time carbon.Carbon // 时间对象
 }
 
 func New() *DateTime {
